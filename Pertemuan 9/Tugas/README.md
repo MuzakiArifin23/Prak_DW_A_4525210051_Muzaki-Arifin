@@ -1,8 +1,8 @@
 **Nama:** Muzaki Arifin<br>
 **NPM:** 4525210051<br>
 **Mata Kuliah:** Praktikum Desain Web<br>
-**Kelas:** (isi kelas)<br>
-**Dosen Pengampu:** (isi nama dosen)
+**Kelas:** (A)<br>
+**Dosen Pengampu:** Ari Wibowo, S.Kom., M.Kom., C. Pro
 
 Praktikum Pertemuan 9 ini membahas *Bootstrap Grid System* (`container`, `row`, `column`, dan *breakpoint*) serta komponen Bootstrap 5.3.8 (Navbar, Card, Alert, Modal, Form). Tugasnya berupa halaman web **Dapur Selaras**, sebuah UMKM kuliner lokal, dengan branding sendiri yang ditulis di `css/style.css`. Halaman dirancang *mobile-first* sehingga tampilannya menyesuaikan layar HP maupun desktop.
 

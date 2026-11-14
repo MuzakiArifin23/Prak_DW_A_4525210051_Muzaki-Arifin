@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Selaras | Masakan Rumahan untuk Setiap Momen</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.8 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS tambahan -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================================
+         NAVBAR
+         ================================== -->
+    <nav class="navbar navbar-expand-lg navbar-selaras sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-white brand-font d-flex align-items-center gap-2" href="#beranda">
+                <img src="images/logo.png" alt="Logo Dapur Selaras" class="navbar-logo">
+                Dapur Selaras
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menuUtama"
+                aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuUtama">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================================
+         HERO
+         ================================== -->
+    <header id="beranda" class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6">
+                    <p class="label mb-2">UMKM Kuliner Lokal</p>
+                    <h1 class="display-4 fw-bold mb-3">Masakan Rumahan yang Selaras di Lidahmu</h1>
+                    <p class="lead mb-4">
+                        Dimasak segar setiap hari dari bahan lokal pilihan, disajikan hangat
+                        untuk pelanggan dan mitra bisnis kami.
+                    </p>
+                    <a href="#produk" class="btn btn-selaras btn-lg me-2 mb-2">Lihat Menu</a>
+                    <a href="#kontak" class="btn btn-outline-krim btn-lg mb-2">Jadi Mitra</a>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="images/chicken.jpg" class="img-fluid hero-img" alt="Sepiring nasi ayam geprek Dapur Selaras">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================================
+             ALERT PROMO
+             ================================== -->
+        <section class="container mt-4">
+            <div class="alert alert-promo alert-dismissible fade show mb-0" role="alert">
+                <strong>Promo Bulan Ini!</strong>
+                Beli 2 Nasi Ayam Geprek, gratis 1 Es Teler. Berlaku sampai 30 November 2026.
+                <a href="#produk" class="alert-link">Lihat menu</a>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+            </div>
+        </section>
+
+        <!-- ==================================
+             TENTANG
+             ================================== -->
+        <section id="tentang" class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h2 class="section-title mb-3">Tentang Kami</h2>
+                    <p>
+                        Dapur Selaras adalah UMKM kuliner yang berdiri dengan satu tujuan:
+                        menghadirkan masakan rumahan yang enak, terjangkau, dan dibuat dengan jujur.
+                        Kami bekerja sama langsung dengan petani dan pemasok lokal agar bahan tetap segar.
+                    </p>
+                    <p class="mb-0">
+                        Kami melayani pelanggan harian, pesanan nasi box dan katering, dan kerja sama
+                        dengan kantin, kantor, maupun toko yang ingin menjual produk kami.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="kotak-nilai p-3 mb-3 shadow-sm"><strong>Bahan segar.</strong> Dari pemasok lokal, dimasak setiap hari.</div>
+                    <div class="kotak-nilai p-3 mb-3 shadow-sm"><strong>Harga bersahabat.</strong> Mulai dari Rp 15.000 per porsi.</div>
+                    <div class="kotak-nilai p-3 shadow-sm"><strong>Terbuka untuk mitra.</strong> Paket reseller dan katering partai.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================
+             PRODUK (CARD)
+             ================================== -->
+        <section id="produk" class="container pb-5">
+            <h2 class="section-title mb-2">Produk Kami</h2>
+            <p class="text-secondary mb-4">Klik "Lihat Detail" untuk informasi lengkap setiap produk.</p>
+
+            <div class="row g-4">
+
+                <!-- Produk 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-produk h-100 shadow-sm">
+                        <img src="images/ayam geprek.jpg" width="150" height="100" class="card-img-top" alt="Nasi Ayam Geprek">
+                        <div class="card-body">
+                            <span class="badge badge-selaras mb-2">Best Seller</span>
+                            <h5 class="card-title">Nasi Ayam Geprek</h5>
+                            <p class="card-text text-secondary">Ayam krispi dengan sambal geprek pedas, nasi hangat, dan lalapan.</p>
+                            <p class="harga mb-0">Rp 20.000</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <button class="btn btn-selaras btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                                data-nama="Nasi Ayam Geprek" data-harga="Rp 20.000"
+                                data-deskripsi="Ayam goreng tepung krispi diulek bersama sambal bawang level pedas pilihanmu, disajikan dengan nasi hangat, lalapan, dan tempe goreng."
+                                data-gambar="images/ayam-geprek.svg">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-produk h-100 shadow-sm">
+                        <img src="images/soto.jpg" width="150" height="100"class="card-img-top" alt="Soto Betawi">
+                        <div class="card-body">
+                            <span class="badge badge-selaras mb-2">Khas Betawi</span>
+                            <h5 class="card-title">Soto Betawi</h5>
+                            <p class="card-text text-secondary">Kuah santan gurih dengan daging sapi empuk, tomat, dan emping.</p>
+                            <p class="harga mb-0">Rp 28.000</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <button class="btn btn-selaras btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                                data-nama="Soto Betawi" data-harga="Rp 28.000"
+                                data-deskripsi="Soto khas Betawi berkuah santan dan susu dengan daging sapi, kentang, tomat, dan emping, disajikan bersama nasi putih hangat."
+                                data-gambar="images/soto.jpg">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-produk h-100 shadow-sm">
+                        <img src="images/mie ayam bakso.jpg" width="150" height="100" class="card-img-top" alt="Mie Ayam Bakso">
+                        <div class="card-body">
+                            <span class="badge badge-selaras mb-2">Baru</span>
+                            <h5 class="card-title">Mie Ayam Bakso</h5>
+                            <p class="card-text text-secondary">Mie kenyal dengan topping ayam kecap, bakso, dan pangsit goreng.</p>
+                            <p class="harga mb-0">Rp 22.000</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <button class="btn btn-selaras btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                                data-nama="Mie Ayam Bakso" data-harga="Rp 22.000"
+                                data-deskripsi="Mie buatan sendiri dengan topping ayam kecap, dua bakso sapi, pangsit goreng, dan kuah kaldu hangat."
+                                data-gambar="images/mie ayam bakso.jpg">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-produk h-100 shadow-sm">
+                        <img src="images/nasi box.jpg" width="150" height="100" class="card-img-top" alt="Nasi Box Dapur Selaras">
+                        <div class="card-body">
+                            <span class="badge badge-selaras mb-2">Untuk Mitra</span>
+                            <h5 class="card-title">Nasi Box Paket Hemat</h5>
+                            <p class="card-text text-secondary">Nasi, ayam bumbu, sayur, dan sambal. Cocok untuk acara dan kantor.</p>
+                            <p class="harga mb-0">Rp 25.000</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <button class="btn btn-selaras btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                                data-nama="Nasi Box Paket Hemat" data-harga="Rp 25.000"
+                                data-deskripsi="Nasi box berisi nasi, ayam bumbu, sayur, dan sambal. Tersedia harga khusus untuk pemesanan minimal 20 box dan untuk mitra reseller."
+                                data-gambar="images/nasi box.jpg">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================
+             FORM KONTAK
+             ================================== -->
+        <section id="kontak" class="container pb-5">
+            <div class="row g-4">
+                <div class="col-12 col-lg-5">
+                    <h2 class="section-title mb-3">Hubungi Kami</h2>
+                    <p>Ingin memesan, bertanya, atau menjadi mitra bisnis? Isi formulir dan kami akan membalas secepatnya.</p>
+                    <p class="mb-1"><strong>Alamat:</strong> Jl. Cungpret No. 12, Bekasi</p>
+                    <p class="mb-1"><strong>WhatsApp:</strong> 0812-3456-7890</p>
+                    <p class="mb-0"><strong>Jam buka:</strong> Setiap hari, 08.00 - 21.00</p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div id="notifKirim"></div>
+                    <form id="formKontak" class="form-kontak shadow-sm p-4 needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Nama lengkap" required>
+                            <div class="invalid-feedback">Nama wajib diisi.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+                            <div class="invalid-feedback">Masukkan email yang valid.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="keperluan" class="form-label">Keperluan</label>
+                            <select class="form-select" id="keperluan" required>
+                                <option value="" selected disabled>Pilih keperluan</option>
+                                <option>Pesan produk</option>
+                                <option>Kerja sama / mitra bisnis</option>
+                                <option>Kritik dan saran</option>
+                            </select>
+                            <div class="invalid-feedback">Pilih salah satu keperluan.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesanmu di sini" required minlength="10"></textarea>
+                            <div class="invalid-feedback">Pesan minimal 10 karakter.</div>
+                        </div>
+                        <button type="submit" class="btn btn-selaras w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================
+         MODAL DETAIL PRODUK
+         ================================== -->
+    <div class="modal fade" id="modalProduk" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modal-header-selaras">
+                    <h5 class="modal-title" id="judulModal">Detail Produk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalGambar" src="" class="img-fluid rounded mb-3" alt="Gambar produk">
+                    <p id="modalDeskripsi"></p>
+                    <p class="harga mb-0" id="modalHarga"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#kontak" class="btn btn-selaras" data-bs-dismiss="modal">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================
+         FOOTER
+         ================================== -->
+    <footer class="footer-selaras py-4">
+        <div class="container">
+            <div class="row gy-2 align-items-center text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0 brand-font fs-5">Dapur Selaras</p>
+                    <small>Masakan rumahan untuk setiap momen.</small>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <a href="#beranda">Beranda</a> &middot;
+                    <a href="#produk">Produk</a> &middot;
+                    <a href="#kontak">Kontak</a>
+                </div>
+                <div class="col-12 text-center pt-2 border-top border-secondary">
+                    <small>&copy; 2026 Praktikum Desain Web &ndash; Muzaki Arifin (4525210051)</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Isi modal sesuai produk yang diklik
+        document.getElementById('modalProduk').addEventListener('show.bs.modal', function (e) {
+            var d = e.relatedTarget.dataset;
+            document.getElementById('judulModal').textContent = d.nama;
+            document.getElementById('modalDeskripsi').textContent = d.deskripsi;
+            document.getElementById('modalHarga').textContent = d.harga;
+            document.getElementById('modalGambar').src = d.gambar;
+            document.getElementById('modalGambar').alt = d.nama;
+        });
+
+        // Validasi form kontak + notifikasi sukses
+        document.getElementById('formKontak').addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!this.checkValidity()) {
+                this.classList.add('was-validated');
+                return;
+            }
+            document.getElementById('notifKirim').innerHTML =
+                '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                'Terima kasih, <strong>' + document.getElementById('nama').value + '</strong>! Pesanmu sudah kami terima.' +
+                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button></div>';
+            this.reset();
+            this.classList.remove('was-validated');
+        });
+    </script>
+</body>
+</html>

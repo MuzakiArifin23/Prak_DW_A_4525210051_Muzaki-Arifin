@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireframe Toko Online Rimbun – Pertemuan 5</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header" id="atas">
+    <span class="note" data-n="1">Header</span>
+    <div class="logo">Rimbun <small>Toko Tanaman Hias</small></div>
+    <form class="search" role="search">
+      <input type="search" placeholder="Cari tanaman atau pot…" aria-label="Cari produk">
+      <button type="button" class="btn btn-small">Cari</button>
+    </form>
+    <a href="#produk" class="cart" id="keranjang" aria-label="Keranjang belanja">Keranjang (0)</a>
+  </header>
+
+  <nav class="navbar" aria-label="Menu utama">
+    <span class="note" data-n="2">Navbar</span>
+    <ul>
+      <li><a href="#beranda" class="active">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <span class="note" data-n="3">Sidebar</span>
+      <h2>Kategori</h2>
+      <ul>
+        <li><a href="#produk">Tanaman Indoor</a></li>
+        <li><a href="#produk">Tanaman Outdoor</a></li>
+        <li><a href="#produk">Kaktus &amp; Sukulen</a></li>
+        <li><a href="#produk">Pot &amp; Media Tanam</a></li>
+      </ul>
+      <h2>Rentang Harga</h2>
+      <label><input type="checkbox"> Di bawah Rp50.000</label>
+      <label><input type="checkbox"> Rp50.000 – Rp150.000</label>
+      <label><input type="checkbox"> Di atas Rp150.000</label>
+    </aside>
+
+    <main class="main">
+
+      <section class="hero" id="beranda">
+        <span class="note" data-n="4">Hero</span>
+        <div class="hero-text">
+          <h1>Hijaukan rumahmu mulai hari ini</h1>
+          <p>Tanaman sehat, siap kirim, dan perawatannya mudah untuk pemula.</p>
+          <a href="#produk" class="btn">Belanja sekarang</a>
+        </div>
+        <div class="img-ph hero-img"><img src="images/RumahcHIjau.png" alt="Tanaman hias di rak dinding" width="470" height="350"></div>
+      </section>
+
+      <section class="products" id="produk">
+        <span class="note" data-n="5">Card produk</span>
+        <h2>Produk terlaris</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="img-ph"><img src="images/Monstera Deliciosa.jpg" alt="Monstera Deliciosa dalam pot anyaman" width="200" height="130"></div>
+            <h3>Monstera Deliciosa</h3>
+            <p class="price">Rp125.000</p>
+            <a href="#keranjang" class="btn btn-small">Tambah ke keranjang</a>
+          </article>
+          <article class="card">
+            <div class="img-ph"><img src="images/Lidah Mertua.jpg" alt="Lidah Mertua dalam pot rotan" width="200" height="130"></div>
+            <h3>Lidah Mertua</h3>
+            <p class="price">Rp65.000</p>
+            <a href="#keranjang" class="btn btn-small">Tambah ke keranjang</a>
+          </article>
+          <article class="card">
+            <div class="img-ph"><img src="images/Kaktus Mini.jpg" alt="Kaktus mini dalam pot oranye" width="200" height="130"></div>
+            <h3>Kaktus Mini</h3>
+            <p class="price">Rp25.000</p>
+            <a href="#keranjang" class="btn btn-small">Tambah ke keranjang</a>
+          </article>
+          <article class="card">
+            <div class="img-ph"><img src="images/Pot Keramik Putih.jpg" alt="Tiga pot keramik putih" width="200" height="130"></div>
+            <h3>Pot Keramik Putih</h3>
+            <p class="price">Rp45.000</p>
+            <a href="#keranjang" class="btn btn-small">Tambah ke keranjang</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="products" id="tentang">
+        <h2>Tentang Rimbun</h2>
+        <p>Rimbun adalah toko tanaman hias di Jakarta. Kami menyediakan tanaman indoor, outdoor, kaktus, dan pot dengan perawatan yang mudah untuk pemula. <a href="#kontak"><strong>Hubungi kami</strong></a> kalau butuh saran memilih tanaman.</p>
+      </section>
+
+      <section class="annotations">
+        <h2>Anotasi fungsi area</h2>
+        <ol>
+          <li><strong>Header:</strong> logo, kolom pencarian, dan akses keranjang agar pengunjung langsung tahu ini toko apa dan bisa mencari produk.</li>
+          <li><strong>Navbar:</strong> menu utama (Beranda, Tentang, Produk, Kontak) untuk berpindah halaman dengan langkah minimal.</li>
+          <li><strong>Sidebar:</strong> filter kategori dan harga untuk mempersempit pilihan. Di mobile, posisinya pindah ke atas konten.</li>
+          <li><strong>Hero:</strong> pesan utama dan tombol CTA "Belanja sekarang" di posisi teratas konten.</li>
+          <li><strong>Card produk:</strong> foto, nama, harga, dan tombol beli. Grid 4 kolom di desktop, 2 kolom di tablet, 1 kolom di mobile.</li>
+          <li><strong>Footer:</strong> kontak, tautan bantuan, dan media sosial.</li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer" id="kontak">
+    <span class="note" data-n="6">Footer</span>
+    <div>
+      <h2><a href="#atas">Rimbun</a></h2>
+      <p>Jl. Contoh No. 12, Jakarta<br>halo@rimbun.example</p>
+    </div>
+    <div>
+      <h2>Bantuan</h2>
+      <p><a href="#tentang">Cara pesan</a><br><a href="#tentang">Pengiriman</a><br><a href="#tentang">Pengembalian</a></p>
+    </div>
+    <div>
+      <h2>Ikuti kami</h2>
+      <p><a href="#atas">Instagram</a><br><a href="#atas">TikTok</a><br><a href="#atas">WhatsApp</a></p>
+    </div>
+    <p class="copy">© 2026 Rimbun. Hak cipta dilindungi.</p>
+  </footer>
+
+</body>
+</html>

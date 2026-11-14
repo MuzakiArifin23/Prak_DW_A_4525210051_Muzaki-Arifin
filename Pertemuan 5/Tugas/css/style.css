@@ -1,0 +1,239 @@
+/* Wireframe mid-fidelity: Toko Online Rimbun */
+:root {
+  --forest: #1f4d3a;
+  --leaf: #3e8e63;
+  --mint: #dff0e6;
+  --cream: #fff9f2;
+  --peach: #ffe3d6;
+  --coral: #e8604c;
+  --coral-dark: #c94a37;
+  --ink: #23302a;
+  --line: #b9d3c3;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.55;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+h1, h2, h3 { line-height: 1.25; }
+h2 { font-size: 1.05rem; margin-bottom: 8px; }
+
+a:focus-visible, input:focus-visible, button:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+}
+
+/* Area wireframe: border putus-putus + label anotasi bernomor */
+.header, .navbar, .sidebar, .hero, .products, .footer, .annotations {
+  position: relative;
+  border: 2px dashed var(--leaf);
+  border-radius: 14px;
+  padding: 20px 16px 16px;
+}
+
+.note {
+  position: absolute;
+  top: -12px;
+  left: 14px;
+  background: var(--forest);
+  color: var(--white);
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 2px 10px 2px 6px;
+  border-radius: 99px;
+}
+.note::before {
+  content: attr(data-n);
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+
+/* Header */
+.header {
+  background: var(--forest);
+  color: var(--white);
+  border-color: var(--leaf);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo small { display: block; font-size: .75rem; font-weight: 400; color: var(--mint); }
+.search { flex: 1; display: flex; gap: 8px; min-width: 200px; }
+.search input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 2px solid var(--leaf);
+  border-radius: 10px;
+  font: inherit;
+}
+.cart {
+  background: var(--peach);
+  color: var(--forest);
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar { background: var(--mint); padding-top: 22px; }
+.navbar ul { display: flex; gap: 8px; flex-wrap: wrap; }
+.navbar a {
+  display: block;
+  padding: 6px 16px;
+  border-radius: 99px;
+  font-weight: 700;
+  color: var(--forest);
+}
+.navbar a:hover, .navbar a.active { background: var(--forest); color: var(--white); }
+
+/* Layout 2 kolom: sidebar + konten */
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+.main { display: grid; gap: 12px; min-width: 0; }
+
+/* Sidebar */
+.sidebar { background: var(--white); display: grid; gap: 6px; }
+.sidebar h2 { margin-top: 10px; color: var(--forest); }
+.sidebar h2:first-of-type { margin-top: 0; }
+.sidebar li a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.sidebar li a:hover { background: var(--mint); }
+.sidebar label { display: flex; gap: 8px; align-items: center; font-size: .92rem; }
+
+/* Hero */
+.hero {
+  background: var(--peach);
+  border-color: var(--coral);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 28px 20px 20px;
+}
+.hero h1 { font-size: 1.9rem; color: var(--forest); margin-bottom: 8px; }
+.hero p { margin-bottom: 16px; max-width: 42ch; }
+
+/* Placeholder gambar: kotak dengan silang */
+.img-ph {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  color: var(--forest);
+  font-size: .85rem;
+  font-weight: 700;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px)),
+    var(--mint);
+}
+.img-ph::first-line { background: var(--mint); padding: 2px 8px; }
+.hero-img { aspect-ratio: 16 / 10; }
+
+/* Tombol CTA */
+.btn {
+  display: inline-block;
+  background: var(--coral);
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  padding: 11px 22px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover { background: var(--coral-dark); }
+.btn-small { padding: 8px 14px; font-size: .88rem; }
+
+/* Produk */
+.products { background: var(--white); padding-top: 24px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+}
+.card {
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+  background: var(--cream);
+}
+.card h3 { font-size: 1rem; color: var(--forest); }
+.price { font-weight: 800; color: var(--coral-dark); }
+.card .btn { text-align: center; }
+
+/* Anotasi */
+.annotations { background: var(--mint); border-style: solid; }
+.annotations ol { padding-left: 20px; display: grid; gap: 6px; }
+
+/* Footer */
+.footer {
+  background: var(--forest);
+  color: var(--white);
+  border-color: var(--leaf);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 24px;
+}
+.footer h2 { color: var(--peach); }
+.footer a:hover { text-decoration: underline; }
+.copy {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--leaf);
+  padding-top: 10px;
+  font-size: .85rem;
+  color: var(--mint);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 200px 1fr; }
+  .hero { grid-template-columns: 1fr; }
+}
+
+/* Mobile: sidebar pindah ke atas, semua jadi 1 kolom */
+@media (max-width: 640px) {
+  body { padding: 10px; }
+  .layout { grid-template-columns: 1fr; }
+  .header { flex-direction: column; align-items: stretch; }
+  .cart { text-align: center; }
+  .navbar ul { justify-content: center; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .footer { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.5rem; }
+}
+
+@media (max-width: 380px) {
+  .grid { grid-template-columns: 1fr; }
+}
